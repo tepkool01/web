@@ -1,0 +1,64 @@
+<?php echo $this->doctype(); ?>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <?php echo $this->headTitle('Cascadeo '. $this->translate('Home'))->setSeparator(' - ')->setAutoEscape(false) ?>
+
+        <?php echo $this->headMeta()
+            ->appendName('viewport', 'width=device-width, initial-scale=1.0')
+            ->appendHttpEquiv('X-UA-Compatible', 'IE=edge');
+        ?>
+
+        <!-- Le styles -->
+        <?php  echo $this->headLink(array('rel' => 'icon', 'type' => 'image/svg+xml', 'href' => $this->basePath() . '/img/svg/favicon.svg'))
+                        ->prependStylesheet($this->basePath('css/style.css'));
+                      ?>
+
+        <!-- Scripts -->
+        <?php echo $this->headScript()
+            ->prependFile($this->basePath('js/bootstrap.min.js'))
+            ->prependFile($this->basePath('js/index.js'))
+            ->prependFile($this->basePath('js/jquery.validate.min.js'))
+            ->prependFile($this->basePath('js/jquery-ui.min.js'))
+            ->prependFile($this->basePath('js/jquery.min.js'))
+            ->prependFile($this->basePath('js/respond.min.js'), 'text/javascript', array('conditional' => 'lt IE 9',))
+            ->prependFile($this->basePath('js/html5shiv.min.js'),   'text/javascript', array('conditional' => 'lt IE 9',))
+        ; ?>
+
+    </head>
+    <body>
+        <header>
+            <nav class="container">
+                <img src="/img/logo-header-white.png">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#our-approach">Our Approach</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#careers">Careers</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <h1>
+                Powering your
+                <strong>transformation</strong>
+                to the cloud
+            </h1>
+            <a href="#about">learn more</a>
+            <div>
+                <img src="/img/partner-aws-white.png" title="Amazon Web Service Partner" alt="Amazon Web Services Partner" style="margin-left: 20px;">
+                <img src="/img/partner-chef-white.png" title="Chef Certified Partner Program" alt="Chef Certified Partner Program" style="margin-left: 100px;">
+                <img src="/img/partner-google-white.png" title="Google Partner" alt="Google Partner" style="margin-left: 60px;">
+            </div>
+        </header>
+        <?php echo $this->content; ?>
+        <footer>
+            <div class="container">
+                <img src="/img/logo-header-white.png">
+                <p>info@cascadeo.com | 866-963-8677 | 918 SouthvStreet Suite 906 | Seattle, WA 98134</p>
+                <p>&copy; Copyright Cascadeo <?php echo date('Y') ?></p>
+            </div>
+        </footer>
+        <?php echo $this->inlineScript() ?>
+    </body>
+</html>

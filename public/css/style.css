@@ -1,0 +1,602 @@
+@font-face {
+    font-family: "Open Sans Regular";
+    src: url('/fonts/Open_Sans/OpenSans-Regular.ttf');
+}
+@font-face {
+    font-family: "Open Sans Light";
+    src: url('/fonts/Open_Sans/OpenSans-Light.ttf');
+}
+@font-face {
+    font-family: "Open Sans Italic";
+    src: url('/fonts/Open_Sans/OpenSans-Italic.ttf');
+}
+@font-face {
+    font-family: "Open Sans Semi Bold";
+    src: url('/fonts/Open_Sans/OpenSans-Semibold.ttf');
+}
+@font-face {
+    font-family: "Open Sans Semi Bold Italic";
+    src: url('/fonts/Open_Sans/OpenSans-SemiboldItalic.ttf');
+}
+@font-face {
+    font-family: "Lato Hairline";
+    src: url('/fonts/Lato/Lato-Hairline.ttf');
+}
+@font-face {
+    font-family: "Lato Regular";
+    src: url('/fonts/Lato/Lato-Regular.ttf');
+}
+@font-face {
+    font-family: "Lato Light";
+    src: url('/fonts/Lato/Lato-Light.ttf');
+}
+h1 { word-spacing: 10px; }
+h3 { font-family: "Open Sans Regular", Arial, sans-serif; }
+h4 { font-family: "Open Sans Semi Bold", Arial, sans-serif; }
+a {
+    -webkit-transition: background 0.25s ease-in-out, color 0.25s ease-in-out;
+    -moz-transition: background 0.25s ease-in-out, color 0.25s ease-in-out;
+    -o-transition: background 0.25s ease-in-out, color 0.25s ease-in-out;
+    transition: background 0.25s ease-in-out, color 0.25s ease-in-out;
+}
+.button, button {
+    text-decoration: none;
+    font-family: "Lato Regular", Arial, sans-serif;
+    font-size: 16px;
+    color: #FFF;
+    padding: 20px 30px;
+    background-color: #FF9000;
+    text-transform: uppercase;
+    border: none;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    -webkit-transition: background 0.25s ease-in-out, color 0.25s ease-in-out;
+    -moz-transition: background 0.25s ease-in-out, color 0.25s ease-in-out;
+    -o-transition: background 0.25s ease-in-out, color 0.25s ease-in-out;
+    transition: background 0.25s ease-in-out, color 0.25s ease-in-out;
+}
+.button:hover, button:hover { background-color: #d27700; }
+.container {
+    max-width: 1120px;
+    margin: auto auto;
+}
+body {
+    min-width: 1120px;
+    margin: 0 0;
+}
+
+/* Header */
+header {
+    background-image: url('/img/hero-home-fpo.jpg');
+    background-size: cover;
+}
+header h1 {
+    font-size: 62px;
+    font-family: "Lato Hairline", Arial, sans-serif;
+    padding-top: 236px;
+    padding-bottom: 40px;
+    letter-spacing: .075em;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #FFF;
+    text-align: center;
+}
+header h1 strong { display: block }
+header div {
+    padding: 85px 0;
+    text-align: center;
+}
+header > a {
+    margin: auto auto;
+    text-align: center;
+    text-decoration: none;
+    width: 140px;
+    font-family: "Lato Light", Arial, sans-serif;
+    letter-spacing: .075em;
+    color: #FFF;
+    padding: 20px 40px;
+    font-size: 16px;
+    background-color: transparent;
+    border: 1px solid #FFF;
+    text-transform: uppercase;
+    display: block;
+}
+header > a:hover {
+    background-color: #fff;
+    color: #000;
+}
+nav {
+    padding-top: 40px;
+    text-transform: uppercase;
+    border-color: transparent;
+    font-family: "Lato Regular",Arial,sans-serif;
+    font-size: 16px;
+    letter-spacing: .075em;
+    color: #fff;
+}
+nav > ul { float: right; }
+nav li {
+    float: left;
+    list-style: none;
+    margin-right: 15px;
+    font-family: "Lato Regular", Arial, sans-serif;
+    font-size: 16px;
+    letter-spacing: .075em;
+}
+nav li a {
+    text-decoration: none;
+    color: #FFF;
+    padding: 5px 10px;
+}
+nav li a:hover {
+    background-color: #fff;
+    color: #000;
+    padding: 5px 10px;
+}
+nav > img { float: left; }
+section { margin: 80px 0; }
+
+/* About Section Styles */
+.about-us {
+    padding-bottom: 50px;
+    border-bottom: 1px solid #e8e8e8;
+}
+.about-us img {
+    float: left;
+    margin-right: 60px;
+}
+.about-us h2 {
+    font-family: "Lato Light", Arial, sans-serif;
+    font-size: 32px;
+    letter-spacing: .075em;
+    color: #144960;
+    margin-bottom: 20px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+.about-us h2 strong {
+    color: #1e90cf;
+    font-weight: 400;
+}
+.about-us h3 {
+    font-family: "Open Sans Italic", Arial, sans-serif;
+    font-size: 26px;
+    color: #b3b3b3;
+    font-weight: 100;
+}
+
+/* News Styles */
+.news h3 {
+    text-transform: uppercase;
+    display: block;
+    font-size: 24px;
+    letter-spacing: .05em;
+    color: #144960;
+    margin: 50px 0 40px 0;
+}
+.news article:nth-of-type(1) {
+    margin-right: 50px;
+    float: left;
+    width: 50%;
+}
+.news article h4 {
+    color: #01b0c9;
+    margin: 0;
+}
+.news article h4:hover {
+    color: #0097ad;
+}
+.news article i {
+    font-family: "Georgia Italic", Arial, sans-serif;
+    color: #2e3839;
+}
+.news article p {
+    font-family: "Open Sans Regular", Arial, sans-serif;
+    font-size: 16px;
+    color: #566268;
+}
+.news article a {
+    font-family: "Lato Regular", Arial, sans-serif;
+    color: #FF9000;
+    text-transform: uppercase;
+}
+.news article a:hover { color: #cc7b12; }
+
+/* Services Section */
+.services {
+    background-image: url('/img/hero-services-fpo.jpg');
+    background-size: cover;
+    color: #FFF;
+}
+.services h1 {
+    text-transform: uppercase;
+    font-size: 52px;
+    font-family: "Lato Light", Arial, sans-serif;
+    margin-bottom: 95px;
+    margin-top: 0;
+    padding-top: 0;
+    font-weight: 100;
+}
+.services > div > div {
+    width: 345px;
+    margin-right: 40px;
+    text-align: center;
+    float: left;
+    margin-bottom: 80px;
+}
+.services img {
+    width: 140px;
+}
+.services h4 {
+    font-size: 24px;
+    margin: 25px 0 75px;
+    text-align: center;
+}
+.services p {
+    margin-left: 25px;
+    font-size: 16px;
+    text-align: left;
+    font-family: "Open Sans Regular", Arial, sans-serif;
+}
+img.cloud-fix {
+    width: 170px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+/* Help Section */
+.help h3 {
+    font-size: 28px;
+    color: #335d70;
+}
+.help h4 {
+    color: #01b0c9;
+    font-family: "Open Sans Semi Bold Italic", Arial, sans-serif;
+    font-size: 28px;
+}
+.help ul {
+    float: left;
+    width: 775px;
+    list-style-type: none;
+    margin-bottom: 80px;
+}
+.help li img {
+    width: 40px;
+    margin-right: 30px;
+    line-height: 40px;
+    vertical-align: middle;
+}
+.help li {
+    font-family: "Open Sans Regular", Arial, sans-serif;
+    font-size: 24px;
+    color: #8b8b8b;
+    margin-bottom: 20px;
+}
+.help aside {
+    float: left;
+    margin-left: 54px;
+    width: 250px;
+    text-align: center;
+}
+.help aside img { width: 100px; }
+.help aside h1 {
+    color: #01b0c9;
+    font-family: "Georgia Italic", Arial, sans-serif;
+    font-style: italic;
+    letter-spacing: .075em;
+    font-weight: 100;
+    font-size: 48px;
+    margin: 0 0;
+}
+.help aside h2 {
+    font-family: "Lato Hairline", Arial, sans-serif;
+    font-weight: 900;
+    font-size: 28px;
+    color: #335d70;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    margin-top: 0;
+}
+.help aside p {
+    font-family: "Open Sans Regular", Arial, sans-serif;
+    font-size: 18px;
+    color: #b3b3b3;
+    text-align: left;
+    margin-left: 20px;
+}
+
+/* Our Approach Section */
+.our-approach {
+    background-image: url('/img/hero-slider-fpo.jpg');
+    background-size: cover;
+    padding-bottom: 80px;
+}
+.our-approach h1 {
+    text-transform: uppercase;
+    font-size: 52px;
+    font-family: "Lato Hairline", Arial, sans-serif;
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 95px;
+    color: #FFF;
+    font-weight: 900;
+}
+.our-approach ol {
+    float: left;
+    list-style-type: none;
+    width: 300px;
+    margin-top: 0;
+}
+.our-approach li {
+    cursor: pointer;
+    width: 298px;
+    opacity: .4;
+    text-transform: uppercase;
+    font-family: "Lato Light", Arial, sans-serif;
+    font-size: 24px;
+    color: #FFF;
+    height: 80px;
+    line-height: 60px;
+    vertical-align: top;
+    margin-left: 5px;
+}
+.our-approach li:hover { opacity: 1; }
+.our-approach li.active {
+    opacity: 1;
+    margin-left: 0;
+    line-height: 80px;
+    height: 100px;
+}
+.our-approach li span {
+    line-height: 60px;
+    vertical-align: top;
+    margin: 0 5px 0 20px;
+    font-style: italic;
+    font-family: "Georgia Italic", Arial, sans-serif;
+    font-size: 26px;
+    float: left;
+}
+.our-approach li.active span {
+    color: #88dc00;
+    font-size: 50px;
+    margin-bottom:0;
+}
+.our-approach li img {
+    width: 60px;
+    float: left;
+}
+.our-approach li.active img { width: 80px; }
+.our-approach aside {
+    width: 580px;
+    display: block;
+    float: left;
+}
+.our-approach aside h4 {
+    font-size: 22px;
+    color: #88dc00;
+    margin: 0 0 32px 0;
+}
+.our-approach aside p {
+    font-family: "Open Sans Light", Arial, sans-serif;
+    margin-bottom: 32px;
+    font-size: 18px;
+    color: #FFF;
+    letter-spacing: 0.075em;
+}
+.approach-left {
+    float: left;
+    width: 90px;
+    line-height: 390px;
+}
+.approach-left img {
+    vertical-align: middle;
+    cursor: pointer;
+}
+.approach-right {
+    float: right;
+    text-align: right;
+    width: 90px;
+    line-height: 390px;
+}
+.approach-right img {
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+/* Future needs section */
+.future-needs > div > div {
+    float: left;
+    margin-left: 40px;
+    width: 333px;
+}
+.future-needs img {
+    float: left;
+    width: 80px;
+    margin-right: 20px;
+}
+.future-needs > div > h3 {
+    font-size: 28px;
+    color: #335d70;
+    margin-bottom: 50px;
+}
+.future-needs div > div > h3 {
+    font-size: 22px;
+    color: #335d70;
+}
+.future-needs p {
+    clear: both;
+    padding-top: 25px;
+    font-family: "Open Sans Regular", Arial, sans-serif;
+    font-size: 15px;
+    color: #335d70;
+}
+
+/* Work For Us Section */
+.work-for-us h1 {
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 52px;
+    font-family: "Lato Hairline", Arial, sans-serif;
+    padding: 50px 0;
+    font-weight: 900;
+}
+.work-for-us .banner { background-color: #144960; }
+.work-for-us h3 {
+    font-size: 22px;
+    color: #335d70;
+    margin-top: 80px;
+}
+.work-for-us h3 span { color: #01B0C9; }
+.work-for-us aside { margin-top: 50px; }
+.work-for-us aside .testimonial-left, .testimonials { float: left; }
+.testimonials {
+    width: 850px;
+    height: 300px;
+}
+.testimonials img {
+    margin-right: 30px;
+    float: left;
+}
+.testimonials p {
+    margin: 0;
+    width: 710px;
+    color: #b3b3b3;
+    font-family: "Open Sans Regular", Arial, sans-serif;
+    font-style: italic;
+    font-size: 24px;
+    display: inline-block;
+}
+.testimonials span {
+    clear: both;
+    float: right;
+    font-family: "Open Sans Regular", Arial, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    color: #144960;
+}
+.work-for-us .testimonial-left {
+    margin-right: 80px;
+    line-height: 120px;
+}
+.testimonial-left img, .testimonial-right img {
+    vertical-align: middle;
+    cursor: pointer;
+}
+.work-for-us .testimonial-right {
+    float: right;
+    line-height: 120px;
+}
+.work-for-us .testimonials button { margin: 65px 0 80px 0; }
+
+
+/* Partners section */
+.partners > div {
+    border-top: 1px solid #e8e8e8;
+    padding-top: 80px;
+}
+.partners > div > div {
+    text-align: center;
+    float: left;
+    width: 333px;
+    margin-right: 40px;
+    margin-bottom: 80px;
+}
+.partners img { height: 100px; }
+.partners p {
+    text-align: left;
+    font-family: "Open Sans Regular", Arial, sans-serif;
+    font-size: 16px;
+    color: #335d70;
+    margin-top: 20px;
+}
+.partners h4 {
+    padding: 0 0 25px 0;
+    font-size: 22px;
+    text-align: center;
+    color: #335d70;
+}
+
+/* Contact Us section */
+.contact-us h1 {
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 52px;
+    font-family: "Lato Hairline", Arial, sans-serif;
+    padding: 50px 0;
+    font-weight: 900;
+}
+.contact-us > div > img { margin-bottom: 80px; }
+.banner-contact { background-color: #01B0C9; }
+.contact-us form {
+    float: left;
+    width: 540px;
+    margin-left: 40px;
+}
+.contact-us div > div { float: left; }
+.contact-us h3 {
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    color: #01B0C9;
+    font-size: 24px;
+    margin-top: 0;
+}
+.contact-us p {
+    font-size: 16px;
+    font-family: "Open Sans Regular", Arial, sans-serif;
+    color: #566268;
+    margin: 0;
+}
+.contact-us > div > div > p { margin-bottom: 20px; }
+.contact-us > div > div > div:nth-of-type(1){ margin-right: 30px; }
+.contact-us span {
+    font-size: 24px;
+    font-family: "Open Sans Regular", Arial, sans-serif;
+    color: #ff9000;
+}
+input, textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px 8px;
+    border-radius:5px;
+    border: 1px solid #bebebe;
+    font-family: "Open Sans Regular", Arial, sans-serif;
+    font-size: 18px;
+}
+textarea { height: 180px; }
+.small-input { width: 250px; }
+.small-input:nth-of-type(2){
+    float:right;
+    margin-right: -15px;
+}
+
+/* Start Footer */
+footer {
+    color: #bebebe;
+    font-family: "Open Sans Regular", Arial, sans-serif;
+    background-color: #144960;
+}
+footer div { padding: 50px 0; }
+footer p {
+    text-align: center;
+    font-family: "Open Sans Regular", Arial, sans-serif;
+    color: #bebebe;
+    font-size: 14px;
+}
+footer img { float: left; }
+
+/* Generic classes */
+.clearfix { clear: both; }
+.center { text-align: center; }
+#errors {
+    margin-bottom: 20px;
+    width: 400px;
+}
+label.error {
+    margin-left: 40px;
+    font-family: "Open Sans Regular", Arial, sans-serif;
+    color: #ff0000;
+    font-size: 14px;
+    display: inline-block;
+    width: 100%;
+}
